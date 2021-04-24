@@ -96,7 +96,7 @@ struct Labeled_Previews: PreviewProvider {
 				
 				Slider(value: .constant(0.1))
 				
-				if #available(macOS 11.0, *) {
+				if #available(macOS 11.0, iOS 14.0, *) {
 					ColorPicker("color", selection: .constant(.accentColor))
 						.labelsHidden()
 						.labeled("color")
